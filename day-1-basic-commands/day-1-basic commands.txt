@@ -1,0 +1,57 @@
+﻿Day -1: Linux Commands Practice Summary
+
+| #  | Command                         | Description                                                       |
+| -- | ------------------------------- | ----------------------------------------------------------------- |
+| 1  | `yelp`                          | Opens the GNOME help browser for documentation.                   |
+| 2  | `cal`                           | Displays the calendar of the current month.                       |
+| 3  | `cal -y`                        | Displays the calendar for the entire current year.                |
+| 4  | `cal -y 29 03 2025`             | Invalid usage; cal does not support -y with date input like that. |
+| 5  | `cal --help`                    | Shows help options and usage information for cal.                 |
+| 6  | `cal -1`                        | Shows the calendar for the current month only (default).          |
+| 7  | `cal -3`                        | Displays the previous, current, and next month’s calendar.        |
+| 8  | `cal -s`                        | Sets Sunday as the first day of the week in the calendar.         |
+| 9  | `cal -m`                        | Sets Monday as the first day of the week.                         |
+| 10 | `cal -h`                        | Hides the header row in the calendar.                             |
+| 11 | `cal -j`                        | Displays Julian calendar days (day-of-year).                      |
+| 12 | `cal -y`                        | Same as #3 – shows calendar for the full year.                    |
+| 13 | `cal -V`                        | Displays the version of the cal utility.                          |
+| 14 | `cal -h`                        | Same as #10 – hides the header.                                   |
+| 15 | `cal`                           | Shows the current month’s calendar again.                         |
+| 16 | `echo Hello`                    | Prints Hello to the terminal.                                     |
+| 17 | `echo Hi`                       | Prints Hi to the terminal.                                        |
+| 18 | `echo $HOME`                    | Displays the path to the user’s home directory.                   |
+| 19 | `pwd`                           | Prints the current working directory path.                        |
+| 20 | `cd Desktop`                    | Changes directory to the Desktop folder.                          |
+| 21 | `pwd`                           | Verifies the current directory after changing.                    |
+| 22 | `echo $HOME`                    | Again displays the home directory path.                           |
+| 23 | `echo $PATH`                    | Shows system paths where executable binaries are located.         |
+| 24 | `echo $0`                       | Shows the name of the currently running shell or script.          |
+| 25 | `echo $SHELL`                   | Displays the default login shell of the user.                     |
+| 26 | `uname -a`                      | Shows detailed system information (kernel, OS, etc.).             |
+| 27 | `uname -r`                      | Displays the kernel release version.                              |
+| 28 | `Name=Jaideep`                  | Assigns the string "Jaideep" to the variable Name.                |
+| 29 | `echo $Name`                    | Prints the value of variable Name.                                |
+| 30 | `cd`                            | Returns to the home directory.                                    |
+| 31 | `pwd`                           | Verifies that you're back in the home directory.                  |
+| 32 | `su - root`                     | Switches user to root with login shell (requires password).       |
+| 33 | `su root`                       | Switches to root without starting login shell.                    |
+| 34 | `date`                          | Displays the current system date and time.                        |
+| 35 | `date +%T`                      | Shows the current time in HH\:MM\:SS format.                      |
+| 36 | `date +%Y`                      | Displays the current year.                                        |
+| 37 | `date +%B`                      | Displays the full name of the current month.                      |
+| 38 | `date +%D`                      | Displays the date in MM/DD/YY format.                             |
+| 39 | `date --help`                   | Shows help documentation for the date command.                    |
+| 40 | `date +%j`                      | Displays the day of the year (Julian format).                     |
+| 41 | `date -s "2025-04-11 11:22:44"` | Sets the system date and time.                                    |
+| 42 | `su - root`                     | Repeats login as root.                                            |
+| 43 | `timedatectl`                   | Shows system date, time, and time zone settings.                  |
+| 44 | `su - root`                     | Repeats switching to root.                                        |
+| 45 | `id student`                    | Displays UID, GID, and groups for user student.                   |
+| 46 | `id root`                       | Displays identity info for root user.                             |
+| 47 | `id u1`                         | Shows user info for u1 (if exists).                               |
+| 48 | `tty`                           | Displays the terminal device name.                                |
+| 49 | `whoami`                        | Prints the current logged-in username.                            |
+| 50 | `su -`                          | Switches to superuser with login shell.                           |
+| 51 | `who am i`                      | Displays the original user who logged in.                         |
+| 52 | `clear`                         | Clears the terminal screen.                                       |
+| 53 | `history`                       | Displays command history.                                         |

@@ -1,0 +1,265 @@
+﻿
+	Linux Command Practice Log with Explanations
+
+1. `man cat`
+
+    Opens the manual page for the cat command.
+
+2. `cd Desktop`
+
+   *Changes the current directory to Desktop.
+
+3. `pwd`
+
+   Displays the current directory path.
+
+4. `cd`
+
+    Goes back to the home directory.
+
+5. `pwd`
+
+    Prints the home directory path.
+
+6. `ls -l`
+
+    Lists files in long format with details like permissions and size.
+
+7. `cd Desktop`
+
+    Navigates again to the Desktop folder.
+
+8. `pwd`
+
+   Confirms you're inside the Desktop directory.
+
+9. `cat > File1`
+
+    Creates a new file File1 and takes input from the user.
+
+10. `cat < File1`
+
+     Displays the contents of File1 using input redirection.
+
+ctrl +D to save
+
+11. `cat File1`
+
+     Shows the contents of File1 directly.
+
+
+12. `cat >> File1`
+
+     Appends content to File1 from user input.
+
+13. `cat File1`
+
+     Displays updated contents of File1.
+
+14. `cat > File2`
+
+    * Creates a new file File2 and adds input.
+
+15. `cat File2`
+
+    * Displays contents of File2.
+
+16. `cat File1 File2 > File3`
+
+    * Combines File1 and File2 into a new file File3.
+
+17. `cat File3`
+
+    * Displays contents of merged file File3.
+
+18. `ls -l`
+
+    * Lists all files and directories with details.
+
+19. `man touch`
+
+    * Opens the manual page for the touch command.
+
+20. `ls -l`
+
+    * Verifies files after viewing the manual.
+
+21. `touch f1 f2 f3 f4`
+
+    * Creates four empty files: f1, f2, f3, and f4.
+
+22. `ls -l`
+
+    * Lists all files again to confirm creation.
+
+23. `touch k{1..4}`
+
+    * Creates files k1, k2, k3, and k4 using brace expansion.
+
+24. `ls -l`
+
+    * Verifies the creation of k1 to k4.
+
+25. `touch -d "2025-04-22 11:22:44" File1`
+
+    * Updates the timestamp of File1 to a specific date/time.
+
+26. `ls -l`
+
+    * Displays modified timestamp of File1.
+
+27. `man touch`
+
+    * Views touch command manual again.
+
+28. `mkdir dir1 dir2 dir3 dir4`
+
+    * Creates four directories in the current path.
+
+29. `ls -l`
+
+    * Lists directories with details.
+
+30. `mkdir d{1..4}`
+
+    * Creates directories d1, d2, d3, and d4 using brace expansion.
+
+31. `ls -l`
+
+    * Lists all new directories.
+
+32. `mkdir -p L1/L2/L3/L4`
+
+    * Creates nested directories (recursive creation).
+
+33. `ls -l`
+
+    * Verifies new top-level directory L1.
+
+34. `ls -R L1`
+
+    * Lists contents of L1 recursively.
+
+35. `tree L1`
+
+    * Displays L1's directory structure as a tree (if tree is installed).
+
+36. `su -`
+
+    * Switches to the superuser account.
+
+37. `tree L1`
+
+    * Runs the tree command again as root.
+
+38. `mkdir -p NIT/{Linux/{Rhcsa,Rhce},Windows/{Mcsa,Mcse},Oracle/{Sql,Plsql}}`
+
+    * Creates a complex folder structure for organized topics.
+
+39. `ls -l`
+
+    * Verifies new top-level directory NIT.
+
+40. `ls -R NIT`
+
+    * Recursively lists all files/folders under NIT.
+
+
+sudo yum install tree -y
+
+
+41. `tree NIT`
+
+    * Shows the directory tree of NIT.
+
+42. `pwd`
+
+    * Displays the current working directory.
+
+43. `ls -l`
+
+    * Lists files and folders in the current directory.
+
+44. `cd NIT`
+
+    * Navigates into the NIT directory.
+
+45. `pwd`
+
+    * Confirms current location is NIT.
+
+46. `ls -l`
+
+    * Lists subdirectories in NIT.
+
+47. `cd Linux`
+
+    * Goes into the Linux folder inside NIT.
+
+48. `pwd`
+
+    * Verifies you're inside Linux.
+
+49. `ls -l`
+
+    * Lists its subfolders (e.g., Rhcsa, Rhce).
+
+50. `cd Rhcsa`
+
+    * Enters the Rhcsa subdirectory.
+
+51. `pwd`
+
+    * Verifies path inside Rhcsa.
+
+52. `ls -l`
+
+    * Lists contents inside Rhcsa.
+
+53. `cd ..`
+
+    * Goes back one level to Linux.
+
+54. `pwd`
+
+    * Confirms current directory is Linux.
+
+55. `cd ../..`
+
+    * Goes back two levels to the parent of NIT.
+
+56. `pwd`
+
+    * Verifies you're back to a higher-level directory.
+
+57. `cd ~`
+
+    * Moves to the home directory.
+
+58. `pwd`
+
+    * Confirms you're in the home directory.
+
+59. `cd`
+
+    * Another way to go to the home directory.
+
+60. `cd Desktop/NIT/Linux/Rhcsa`
+
+    * Navigates directly to the nested Rhcsa folder.
+
+61. `pwd`
+
+    * Verifies current directory is Rhcsa.
+
+62. `cd`
+
+    * Returns to the home directory again.
+
+63. `pwd`
+
+    * Confirms you're back in the home directory.
+
+64. `history`
+
+    * Lists all previously executed commands.

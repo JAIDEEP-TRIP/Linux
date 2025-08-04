@@ -1,0 +1,107 @@
+  Command                                       Description
+         touch hello.txt               Create empty file named 'hello.txt'
+             cat > file1            Create or overwrite 'file1' with input
+             cat > file2            Create or overwrite 'file2' with input
+         mkdir dir{1..3}               Create directories dir1, dir2, dir3
+                      ls                           List directory contents
+                     cls        Invalid command in Linux (used in Windows)
+                   clear                             Clear terminal screen
+          cp file1 file2                               Copy file1 to file2
+               cat file2                         Display contents of file2
+               cat file1                         Display contents of file1
+           cp file1 new1                                Copy file1 to new1
+                      ls                           List directory contents
+                cat new1                          Display contents of new1
+           cp file1 dir1                              Copy file1 into dir1
+                      ls                           List directory contents
+                 cd dir1                              Enter dir1 directory
+                      ls                           List directory contents
+                   cd ..                     Go back to previous directory
+                 cd dir1                              Enter dir1 directory
+                   cd ..                     Go back to previous directory
+                   ls -l                        List contents with details
+              ls -l dir1                    List detailed contents of dir1
+         cp -r dir1 dir2                   Copy dir1 into dir2 recursively
+                      ls                           List directory contents
+              ls -l dir2                    List detailed contents of dir2
+         ls -l dir2/dir1          List detailed contents inside nested dir
+          mv file1 file2         Rename file1 to file2 (overwriting file2)
+               cat file1          Try to show file1 (may be moved or gone)
+                      ls                           List directory contents
+               cat file2                Display file2 contents (was moved)
+           mv file2 new2                              Rename file2 to new2
+                      ls                           List directory contents
+                cat new2                             Display new2 contents
+            mv new2 dir1                               Move new2 into dir1
+              ls -l dir1                     Show detailed listing of dir1
+            mv dir1 dir2 Try renaming dir1 to dir2 (if dir2 exists, error)
+            mv dir1 dir3  Try renaming dir1 to dir3 (if dir1 still exists)
+                      ls                           List directory contents
+                 cd dir3                                        Enter dir3
+                      ls                                     List contents
+                 cd dir1                                 Enter nested dir1
+                      ls                                     List contents
+                   cd ..                                   Go back to dir3
+            mv dir3 demo                               Rename dir3 to demo
+                 cd demo                              Enter demo directory
+                      ls                                     List contents
+                 cd dir1                            Enter dir1 inside demo
+                      ls                                     List contents
+                    cd..                 Invalid syntax; should be 'cd ..'
+                   cd ..                                 Go back one level
+                      ls                                     List contents
+            rm -rvf demo             Recursively and verbosely delete demo
+                rm -rf *           Delete all files/directories forcefully
+           touch k{1..5)               Invalid syntax (mismatched bracket)
+           touch k{1..5}                             Create files k1 to k5
+                      ls                                     List contents
+         mkdir dir{1..4}                   Create directories dir1 to dir4
+                      ls                                     List contents
+                   ls -l                                  Detailed listing
+                 cd /dev                          Change to /dev directory
+                   ls -l                          Detailed listing of /dev
+                   cd ..                                   Go back to root
+                   ls -l                                  Detailed listing
+                   cd ..                             Go back another level
+              cd Desktop                         Go into Desktop directory
+                    cd `                                   Invalid command
+                    cd ~                              Go to home directory
+             cd Desktop/                               Enter Desktop again
+        file /etc/[asswd          Invalid syntax; likely meant /etc/passwd
+        file /etc/passwd                 Identify file type of /etc/passwd
+               file /bin                        Identify file type of /bin
+              cat > soft                Create/overwrite 'soft' with input
+                   ls -l                                  Detailed listing
+                 rm soft                                  Delete soft file
+                      ls                                     List contents
+                   cd ..                             Go back one directory
+              cat > soft                     Create/overwrite 'soft' again
+                      ls                                     List contents
+                   ls -l                                  Detailed listing
+                cat soft                          Display contents of soft
+              cd Desktop                                     Enter Desktop
+                      ls                                     List contents
+ln -s /home/jaideep/soft                 Create symbolic link to soft file
+                    ls l                     Invalid; likely meant 'ls -l'
+                   ls -l                                  Detailed listing
+                cat soft                        Display soft (via symlink)
+             cat >> soft                                    Append to soft
+                cat soft                           Display updated content
+               file soft                           Check file type of soft
+ file /home/student/soft                   Check file type (may not exist)
+              du -h soft               Disk usage of soft (human readable)
+du -h /home/student/soft           Disk usage of external soft (if exists)
+                      cd                              Go to home directory
+                      ls                                     List contents
+                   ls -l                                  Detailed listing
+                cat soft                          Display contents of soft
+              du -h soft                                Disk usage of soft
+             cd Desktop/                                     Enter Desktop
+              ls -i soft                                Show inode of soft
+ls -i /home/student/soft                            Inode info (if exists)
+ls -i /home/jaideep/soft                           Inode info of soft file
+                      cd                                        Go to home
+                 rm soft                                  Delete soft file
+             cd Desktop/                               Enter Desktop again
+                cat soft                      Display soft (may not exist)
+                 du dir1                                Disk usage of dir1

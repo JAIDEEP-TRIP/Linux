@@ -1,0 +1,78 @@
+🔧 Linux TTY Shortcut Keys (Switching Between GUI and CLI in RHEL)
+
+Shortcut           | Description
+------------------ | ---------------------------------------
+Ctrl + Alt + F1    | Switch to GUI (RHEL 7) / CLI (RHEL 8)
+Ctrl + Alt + F2    | Switch to CLI (RHEL 7 & 8)
+Ctrl + Alt + F3    | Switch to CLI (RHEL 8)
+
+📝 Vim Modes Overview
+
+- Command Mode: Default mode to navigate and give commands
+- Insert Mode: For inserting/editing text
+- Visual Mode: For selecting text
+- Ex Command Mode: For running commands beginning with :
+
+🔤 Command Mode to Insert Mode
+
+Key | Action
+----|-------
+i   | Enter insert mode at cursor
+a   | Enter insert mode after the cursor
+A   | Insert at end of line
+I   | Insert at start of line
+o   | Open new line below cursor
+O   | Open new line above cursor
+
+✏️ Editing Commands in Vim
+
+Command         | Description
+----------------|----------------------------------
+:w              | Save file
+:q              | Quit
+:x              | Save and quit
+:wq             | Save and quit
+:wq!            | Force save and quit
+:X              | Encrypt the file
+:se nu          | Show line numbers
+:se nonu        | Hide line numbers
+/word           | Search for word
+:s/old/new      | Replace first occurrence of old with new on current line
+:%s/old/new     | Replace all occurrences in entire file
+
+📄 Navigation in Vim (Command Mode)
+
+Command | Description
+--------|-------------------------------------
+gg      | Go to start of file
+G       | Go to end of file
+w       | Move cursor forward word by word
+b       | Move cursor backward word by word
+
+✂️ Cut, Copy, Paste, Undo, Redo
+
+Command    | Description
+-----------|--------------------------
+dd         | Cut current line
+ndd        | Cut n lines
+yy         | Copy current line
+nyy        | Copy n lines
+p          | Paste below cursor
+u          | Undo
+Ctrl + r   | Redo
+
+📚 Vim Launch Commands (From CLI)
+
+Command     | Description
+------------|------------------------------------------
+vi file1    | Open file1 in Vim (basic editor)
+vim file1   | Open file1 in Vim (improved editor)
+gedit       | GUI-based text editor
+gvim        | Graphical Vim editor (GUI)
+
+🧠 Notes
+
+- $vi is used in older RHEL (e.g., RHEL 6)
+- $vim is used in newer RHEL (e.g., RHEL 7+)
+- GUI editors: gedit, gvim, wordpad, notepad
+- CLI editors: vi, vim

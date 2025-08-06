@@ -1,0 +1,78 @@
+🗂️ Directory & Navigation Commands
+
+cd            # Go to home directory
+cd ..         # Move one level up
+cd <dir>      # Move into a specific directory
+ls            # List directory contents
+ls -l         # Long listing format
+ls -la        # List all files including hidden
+ls -ltr       # Sort by modification time, reverse order
+pwd           # Print current working directory
+
+📁 File & Directory Management
+
+mkdir dir{1..4}        # Create multiple directories
+touch f{1..4}          # Create multiple files
+touch .env             # Create hidden file
+touch cat bat mat      # Create files
+rm -f *                # Force delete all files in current dir
+rm -rf *               # Force delete all files & folders
+mv .demo demo          # Rename directory
+
+🔍 File Matching & Wildcards
+
+ls -l f*           # List files starting with 'f'
+ls -l f?           # List 2-char files starting with 'f'
+ls -l *1           # List files ending with '1'
+ls -l .*           # List hidden files
+ls -l [dirf]*      # Files starting with d, i, r, or f
+ls -l [!dirf]*     # Files NOT starting with d, i, r, f
+ls -ld d*          # List directories starting with 'd'
+ls -l *at          # Files ending with 'at'
+ls -l ?at          # 3-letter files ending with 'at'
+ls -l ??at         # 4-letter files ending with 'at'
+ls -l [a-d]*       # Files starting with a to d
+
+🧾 Environment & Variables
+
+echo $HOME       # Display home directory
+echo $PATH       # Show PATH environment variable
+echo $0          # Show shell name
+echo $SHELL      # Show current shell
+uname -a         # Full system info
+uname -r         # Kernel release
+
+👤 User & Permissions
+
+whoami           # Show current user
+su - root        # Switch to root user (login shell)
+sudo su -        # Gain root access via sudo
+
+📄 File Content & Searching
+
+cat file         # View file content
+cat > file       # Create file and type content directly
+grep root /etc/passwd              # Search "root"
+grep -n root /etc/passwd           # With line numbers
+grep -e root -e student /etc/passwd # Multiple patterns
+grep -v root /etc/passwd           # Exclude "root"
+grep -i hello file5                # Case-insensitive search
+
+📚 Manual Pages
+
+man grep         # Manual for grep command
+
+🧪 Incorrect or Debug Statements
+
+UNAM -A          # Typo (should be uname -a)
+Name = Jaideep   # Incorrect (not valid bash syntax)
+echo $Name       # Case-sensitive variable (likely undefined)
+
+grep -nB4 wheel /etc/group    # Show 'wheel' match with 4 lines *Before* match, with line numbers
+grep -nB6 wheel /etc/group    # Show 'wheel' match with 6 lines *Before* match, with line numbers
+grep -nA6 wheel /etc/group    # Show 'wheel' match with 6 lines *After* match, with line numbers
+
+ls -l                 # Long listing of files and directories
+ls -l | grep ^b       # Show entries starting with 'b' (like block devices) in long listing
+ls -l | grep ^c       # Show entries starting with 'c' (like character devices) in long listing
+history               # Show command history

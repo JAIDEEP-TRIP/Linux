@@ -1,0 +1,140 @@
+
+## 🧭 **Navigation Commands**
+
+```bash
+cd /            # Go to root directory
+cd /dev         # Enter the /dev directory
+cd ..           # Go up one level
+cd ~            # Go to the home directory
+ls              # List contents of current directory
+ls -l           # Long format listing
+ls -i           # Show inode numbers
+ls -li          # Long + inode
+ls -l | grep ^b # Show block devices
+ls -l | grep t$ # Show files ending with 't'
+ls -l | grep sda # Filter for 'sda' devices
+```
+
+---
+
+## 🖥️ **Screen & Session Control**
+
+```bash
+clear           # Clear terminal screen
+exit            # Exit terminal or shell
+```
+
+---
+
+## 🔍 **Process and System Info**
+
+```bash
+ps aux | grep 3922  # Search for process ID 3922
+grep 3392           # Invalid, needs a file or pipe
+```
+
+---
+
+## 🧮 **Word/Line Count with `wc`**
+
+```bash
+wc /etc/passwd        # Show lines, words, bytes
+wc -l /etc/passwd     # Count lines only
+wc -w /etc/passwd     # Count words
+wc -c /etc/passwd     # Count characters
+ls -l | wc -l         # Count number of listed files
+ls -l | grep ^b | wc -l # Count block devices
+wc -l                 # Waits for input unless piped
+```
+
+---
+
+## 📄 **Viewing Files**
+
+```bash
+cat /etc/passwd       # Show full content
+less /etc/passwd      # Scrollable view
+more /etc/passwd      # Page-by-page view
+head /etc/passwd      # First 10 lines
+head -n 4 /etc/passwd # First 4 lines
+tail /etc/passwd      # Last 10 lines
+```
+
+---
+
+## 📁 **File Creation and Sorting**
+
+```bash
+cat > File1           # Create and type into File1
+cat File1             # Display contents
+sort File1            # Sort lines
+sort -r File1         # Sort in reverse order
+sort -u File1         # Sort and remove duplicates
+sort -u File1 > File2 # Save sorted unique lines into File2
+cat File2             # Display File2
+```
+
+---
+
+## 🧪 **Editing Files with Vim & Vi**
+
+```bash
+vim File1             # Open File1 in Vim
+vi File4              # Open File4 in Vi
+cat > File4           # Create and type into File4
+cat File4             # Display File4
+```
+
+---
+
+## 🔧 **Text Substitution using `sed`**
+
+```bash
+sed 's/Linux/Windows/1' File4  # Replace 1st occurrence
+sed 's/Linux/Windows/2' File4  # Replace 2nd occurrence
+sed 's/Linux/Windows/g' File4  # Replace all occurrences
+```
+
+---
+
+## 🔎 **Find Files and Attributes**
+
+```bash
+find /                 # List everything under root (slow)
+find / -name File1     # Search for file by name
+find / -inum 25179268  # Find file by inode number
+find / -type b         # Find block devices
+find / -size 10k       # Files exactly 10 KB
+find / -size +10k      # Files larger than 10 KB
+find / -user jaideep   # Files owned by user 'jaideep'
+find / -group student  # Files belonging to group 'student'
+```
+
+❗️Note:
+
+* These have minor syntax issues:
+
+  ```bash
+  find /-user jaideep   # ❌ should be: find / -user jaideep
+  find / f              # ❌ invalid
+  ```
+
+---
+
+## 📚 **Manual Pages and Help**
+
+```bash
+man -k .               # Search all available man page keywords
+man -k . | wc -l       # Count total man page entries
+man man                # Read man page for the `man` command
+```
+
+---
+
+## 🧠 **Last Command**
+
+```bash
+history                # Show command history
+
+
+Let me know if you'd like this exported to `.txt` or need a filtered list (like only `wc`, `find`, or `sed` commands).
